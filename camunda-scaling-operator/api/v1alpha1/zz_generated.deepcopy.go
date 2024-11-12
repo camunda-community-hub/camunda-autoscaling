@@ -107,6 +107,11 @@ func (in *ZeebeAutoscalerSpec) DeepCopyInto(out *ZeebeAutoscalerSpec) {
 		*out = new(int32)
 		**out = **in
 	}
+	if in.Partitions != nil {
+		in, out := &in.Partitions, &out.Partitions
+		*out = new(int32)
+		**out = **in
+	}
 	out.ZeebeRef = in.ZeebeRef
 }
 
