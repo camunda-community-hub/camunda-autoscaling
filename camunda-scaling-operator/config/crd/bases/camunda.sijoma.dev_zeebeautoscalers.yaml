@@ -52,6 +52,10 @@ spec:
           spec:
             description: ZeebeAutoscalerSpec defines the desired state of ZeebeAutoscaler
             properties:
+              partitions:
+                description: Partitions the number of Zeebe partitions
+                format: int32
+                type: integer
               replicas:
                 description: Replicas the number of Zeebe brokers to deploy
                 format: int32
@@ -156,6 +160,11 @@ spec:
                   - type
                   type: object
                 type: array
+              currentPartitions:
+                description: ObservedPartitions contains information on how many partitions
+                  are configured for Zeebe
+                format: int32
+                type: integer
               observedGeneration:
                 description: ObservedGeneration is the last observed generation by
                   the controller.

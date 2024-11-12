@@ -61,7 +61,6 @@ func (r *ZeebeAutoscalerReconciler) Reconcile(ctx context.Context, req ctrl.Requ
 
 	// populate this CRD
 	zeebeAutoscalerCR := new(camundav1alpha1.ZeebeAutoscaler)
-
 	if err := r.Get(ctx, req.NamespacedName, zeebeAutoscalerCR); err != nil {
 		// do not requeue "not found" errors
 		return ctrl.Result{}, client.IgnoreNotFound(err)
@@ -76,7 +75,7 @@ func (r *ZeebeAutoscalerReconciler) Reconcile(ctx context.Context, req ctrl.Requ
 		Namespace: zeebeAutoscalerCR.Namespace,
 	}, &scaleTarget)
 	if err != nil {
-		return ctrl.Result{}, err
+		return ctrl.Result{}, fmt.Errorf("failed to get scale target: %w", err)
 	}
 
 	// Prepare ZeebeClient
@@ -89,7 +88,16 @@ func (r *ZeebeAutoscalerReconciler) Reconcile(ctx context.Context, req ctrl.Requ
 	// Check topology
 	topology, err := zeebeClient.Topology(ctx)
 	if err != nil {
-		return ctrl.Result{}, err
+		return ctrl.Result{}, fmt.Errorf("failed to fetch topology: %w", err)
+	}
+
+	if topology == nil {
+		return ctrl.Result{}, fmt.Errorf("no topology found")
+	}
+
+	brokers := topology.GetBrokers()
+	if len(brokers) > 0 {
+		zeebeAutoscalerCR.Status.CurrentPartitions = int32(len(brokers[0].GetPartitions()))
 	}
 
 	if !topology.HasPendingChange() {

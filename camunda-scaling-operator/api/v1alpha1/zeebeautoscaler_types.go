@@ -27,6 +27,9 @@ type ZeebeAutoscalerSpec struct {
 	// Replicas the number of Zeebe brokers to deploy
 	Replicas *int32 `json:"replicas,omitempty"`
 
+	// Partitions the number of Zeebe partitions
+	Partitions *int32 `json:"partitions,omitempty"`
+
 	// +kubebuilder:default={}
 	ZeebeRef ZeebeRef `json:"zeebeRef,omitempty"`
 }
@@ -58,6 +61,9 @@ type ZeebeAutoscalerStatus struct {
 	// Conditions holds the information on the last operations on Zeebe that can be useful during scaling
 	// +kubebuilder:validation:Optional
 	Conditions []metav1.Condition `json:"conditions,omitempty" patchStrategy:"merge" patchMergeKey:"type" protobuf:"bytes,1,rep,name=conditions"`
+
+	// CurrentPartitions contains information on how many partitions are configured for Zeebe
+	CurrentPartitions int32 `json:"currentPartitions,omitempty"`
 
 	Replicas int32  `json:"replicas"`
 	Selector string `json:"selector"`
