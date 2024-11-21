@@ -3,7 +3,7 @@ module github.com/sijoma/camunda-scaling-operator
 go 1.22.0
 
 require (
-	github.com/onsi/ginkgo/v2 v2.21.0
+	github.com/onsi/ginkgo/v2 v2.22.0
 	github.com/onsi/gomega v1.34.2
 	github.com/stretchr/testify v1.9.0
 	k8s.io/api v0.31.0
