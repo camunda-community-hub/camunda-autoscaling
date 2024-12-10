@@ -30,7 +30,7 @@
     <version.guava>33.3.1-jre</version.guava>
     <version.javax-jsonb>1.0</version.javax-jsonb>
     <version.jcip>1.0</version.jcip>
-    <version.micrometer>1.13.4</version.micrometer>
+    <version.micrometer>1.14.2</version.micrometer>
     <version.slf4j>2.0.1</version.slf4j>
     <version.zeebe>8.6.0</version.zeebe>
 
