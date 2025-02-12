@@ -41,7 +41,7 @@
     <plugin.version.enforcer>3.5.0</plugin.version.enforcer>
     <plugin.version.google-format>1.17.0</plugin.version.google-format>
     <plugin.version.jar>3.4.2</plugin.version.jar>
-    <plugin.version.jib>3.4.2</plugin.version.jib>
+    <plugin.version.jib>3.4.4</plugin.version.jib>
     <plugin.version.resources>3.3.1</plugin.version.resources>
     <plugin.version.spotless>2.43.0</plugin.version.spotless>
   </properties>
