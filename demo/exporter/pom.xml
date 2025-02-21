@@ -42,7 +42,7 @@
     <plugin.version.jar>3.4.2</plugin.version.jar>
     <plugin.version.resources>3.3.1</plugin.version.resources>
     <plugin.version.shade>3.6.0</plugin.version.shade>
-    <plugin.version.spotless>2.43.0</plugin.version.spotless>
+    <plugin.version.spotless>2.44.3</plugin.version.spotless>
   </properties>
 
   <dependencyManagement>
