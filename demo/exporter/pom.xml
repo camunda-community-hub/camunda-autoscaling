@@ -32,7 +32,7 @@
     <version.jcip>1.0</version.jcip>
     <version.micrometer>1.13.4</version.micrometer>
     <version.slf4j>2.0.1</version.slf4j>
-    <version.zeebe>8.6.0</version.zeebe>
+    <version.zeebe>8.6.10</version.zeebe>
 
     <!-- plugin version -->
     <plugin.version.clean>3.4.0</plugin.version.clean>
