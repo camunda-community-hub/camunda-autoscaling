@@ -8,7 +8,7 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	"github.com/sijoma/camunda-scaling-operator/pkg/scalingclient/zbmgmt"
+	"github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/pkg/scalingclient/zbmgmt"
 )
 
 type ZeebeMgmtClient struct {

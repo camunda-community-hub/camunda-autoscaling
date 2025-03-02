@@ -24,7 +24,7 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/sijoma/camunda-scaling-operator/test/utils"
+	"github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/test/utils"
 )
 
 const namespace = "camunda-scaling-operator-system"

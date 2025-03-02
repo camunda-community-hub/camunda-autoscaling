@@ -15,6 +15,6 @@ resources:
   domain: sijoma.dev
   group: camunda
   kind: ZeebeAutoscaler
-  path: github.com/sijoma/camunda-scaling-operator/api/v1alpha1
+  path: github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/api/v1alpha1
   version: v1alpha1
 version: "3"

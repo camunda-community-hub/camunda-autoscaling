@@ -32,7 +32,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	camundav1alpha1 "github.com/sijoma/camunda-scaling-operator/api/v1alpha1"
+	camundav1alpha1 "github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/api/v1alpha1"
 	// +kubebuilder:scaffold:imports
 )
 

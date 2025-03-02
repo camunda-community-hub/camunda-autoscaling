@@ -31,8 +31,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	camundav1alpha1 "github.com/sijoma/camunda-scaling-operator/api/v1alpha1"
-	"github.com/sijoma/camunda-scaling-operator/pkg/scalingclient"
+	camundav1alpha1 "github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/api/v1alpha1"
+	"github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/pkg/scalingclient"
 )
 
 // ZeebeAutoscalerReconciler reconciles a ZeebeAutoscaler object

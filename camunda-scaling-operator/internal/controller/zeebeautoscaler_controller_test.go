@@ -27,7 +27,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	camundav1alpha1 "github.com/sijoma/camunda-scaling-operator/api/v1alpha1"
+	camundav1alpha1 "github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-operator/api/v1alpha1"
 )
 
 var _ = Describe("ZeebeAutoscaler Controller", func() {
