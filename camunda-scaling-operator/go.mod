@@ -2,7 +2,7 @@ module github.com/camunda-community-hub/camunda-autoscaling/camunda-scaling-oper
 
 go 1.23.0
 
-toolchain go1.23.5
+toolchain go1.26.6
 
 require (
 	github.com/onsi/ginkgo/v2 v2.21.0
