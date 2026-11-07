@@ -27,7 +27,7 @@
 
     <!-- project dependencies -->
     <version.dsl-json>2.0.2</version.dsl-json>
-    <version.guava>33.3.1-jre</version.guava>
+    <version.guava>33.7.2-jre</version.guava>
     <version.javax-jsonb>1.0</version.javax-jsonb>
     <version.jcip>1.0</version.jcip>
     <version.micrometer>1.13.4</version.micrometer>
